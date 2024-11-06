@@ -133,9 +133,6 @@ We are always open to contributions! If you'd like to improve **Sudoku Solver** 
    - Once you're happy with your changes, submit a **Pull Request (PR)** to the main repository. In your PR description, explain what changes you made and why.
    - Our team will review the PR, provide feedback if needed, and merge it into the main project.
 
-6. **Follow the Code of Conduct**:
-   - Please be respectful of others and follow our [Code of Conduct](CODE_OF_CONDUCT.md) while contributing. We aim to create a welcoming and inclusive environment for all contributors!
-
 **We appreciate all contributions**—whether it’s a bug fix, a new feature, or even just documentation improvements. Every little bit helps to make this project better!
 
 ---
