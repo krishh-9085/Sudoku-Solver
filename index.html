@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" href="icons/brain.svg" type="image/x-icon">
+  <link rel="icon" href="icons/brain.svg" type="image/x-icon" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sudoku Solver</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        
-        <h1> <img src="icons/sudoku.svg" id="sudo" alt="">Sudoku Solver</h1>
-        <div class="grid" id="sudokuGrid"></div>
-        <div class="loading-icon" id="loadingIcon">
-            <div class="cube">
-                <div class="face front"></div>
-                <div class="face back"></div>
-                <div class="face left"></div>
-                <div class="face right"></div>
-                <div class="face top"></div>
-                <div class="face bottom"></div>
-            </div>
+      <h1><img src="icons/sudoku.svg" id="sudo" alt="" />Sudoku Solver</h1>
+      <div class="grid" id="sudokuGrid"></div>
+      <div class="loading-icon" id="loadingIcon">
+        <div class="cube">
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="face top"></div>
+          <div class="face bottom"></div>
         </div>
-        <div class="buttons">
-            <button onclick="getPuzzle('easy')">Easy</button>
-            <button onclick="getPuzzle('medium')">Medium</button>
-            <button onclick="getPuzzle('hard')">Hard</button>
-            <button onclick="getPuzzle('random')">Random</button>
-            <button onclick="resetGrid()">Reset</button>
-            <button onclick="solvePuzzle()">Solve Puzzle</button>
-        </div>
+      </div>
+      <div class="buttons">
+        <button onclick="getPuzzle('easy')">Easy</button>
+        <button onclick="getPuzzle('medium')">Medium</button>
+        <button onclick="getPuzzle('hard')">Hard</button>
+        <button onclick="getPuzzle('random')">Random</button>
+        <button onclick="resetGrid()">Reset</button>
+        <button onclick="solvePuzzle()">Solve Puzzle</button>
+      </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,18 +1,28 @@
 /* Global Styles */
 * {
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-    margin: 0; /* Resets margin for all elements */
-    padding: 0; /* Resets padding for all elements */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
+    margin: 0;
+    /* Resets margin for all elements */
+    padding: 0;
+    /* Resets padding for all elements */
 }
 
 body {
-    font-family: Arial, sans-serif; /* Sets the font to Arial */
-    display: flex; /* Uses flexbox layout */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    height: 100vh; /* Makes the body take full viewport height */
-    background-color: #121212; /* Dark background color */
-    color: #e0e0e0; /* Light color for text */
+    font-family: Arial, sans-serif;
+    /* Sets the font to Arial */
+    display: flex;
+    /* Uses flexbox layout */
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+    height: 100vh;
+    /* Makes the body take full viewport height */
+    background-color: #121212;
+    /* Dark background color */
+    color: #e0e0e0;
+    /* Light color for text */
 }
 
 /* Loading Icon Styles */
@@ -20,15 +30,19 @@ body {
 
 
 .loading-icon {
-    display: none; /* Initially hidden, toggle to 'display: flex' when needed */
+    display: none;
+    /* Initially hidden, toggle to 'display: flex' when needed */
     justify-content: center;
     align-items: center;
-    position: absolute; /* Position it in the center of the grid */
+    position: absolute;
+    /* Position it in the center of the grid */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the loading icon in the grid */
+    transform: translate(-50%, -50%);
+    /* Centers the loading icon in the grid */
     perspective: 1000px;
-    z-index: 1; /* Ensures the loading icon is above other grid elements */
+    z-index: 1;
+    /* Ensures the loading icon is above other grid elements */
 }
 
 .cube {
@@ -49,196 +63,316 @@ body {
     box-sizing: border-box;
 }
 
-.front { transform: translateZ(25px); }
-.back { transform: rotateY(180deg) translateZ(25px); }
-.left { transform: rotateY(-90deg) translateZ(25px); }
-.right { transform: rotateY(90deg) translateZ(25px); }
-.top { transform: rotateX(90deg) translateZ(25px); }
-.bottom { transform: rotateX(-90deg) translateZ(25px); }
+.front {
+    transform: translateZ(25px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(25px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(25px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(25px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(25px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(25px);
+}
 
 @keyframes rotateCube {
-    0% { transform: rotateX(0deg) rotateY(0deg); }
-    100% { transform: rotateX(360deg) rotateY(360deg); }
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
 }
 
 
 
 /* Container Styles */
 .container {
-    text-align: center; /* Centers text inside container */
-    background-color: #1e1e1e; /* Dark background for the container */
-    border-radius: 10px; /* Rounds the corners of the container */
-    padding: 20px; /* Adds space inside the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
-    width: 100%; /* Makes the container take full width */
-    max-width: 450px; /* Limits the width to 450px */
-    margin-top: auto; /* Vertically centers the container */
-    margin-bottom: 40px; /* Adds space below the container */
-    padding-bottom: 20px; /* Adds space below the container */
-    align-items: flex-end; /* Aligns the buttons vertically */
-    justify-content: space-between; /* Spaces the buttons evenly */
-    flex-wrap: wrap; /* Wraps buttons if there are too many */
-    flex-direction: column; /* Vertically aligns the buttons */
-    justify-content: space-around; /* Spaces the buttons evenly */
+    text-align: center;
+    /* Centers text inside container */
+    background-color: #1e1e1e;
+    /* Dark background for the container */
+    border-radius: 10px;
+    /* Rounds the corners of the container */
+    padding: 20px;
+    /* Adds space inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow around the container */
+    width: 100%;
+    /* Makes the container take full width */
+    max-width: 450px;
+    /* Limits the width to 450px */
+    margin-top: auto;
+    /* Vertically centers the container */
+    margin-bottom: 40px;
+    /* Adds space below the container */
+    padding-bottom: 20px;
+    /* Adds space below the container */
+    align-items: flex-end;
+    /* Aligns the buttons vertically */
+    justify-content: space-between;
+    /* Spaces the buttons evenly */
+    flex-wrap: wrap;
+    /* Wraps buttons if there are too many */
+    flex-direction: column;
+    /* Vertically aligns the buttons */
+    justify-content: space-around;
+    /* Spaces the buttons evenly */
 
 
 }
 
 /* Heading Styles */
 h1 {
-    font-size: 24px; /* Sets font size for the heading */
-    margin-bottom: 20px; /* Adds space below the heading */
-    color: #e0e0e0; /* Light color for the heading text */
-    text-transform: uppercase; /* Converts text to uppercase */
-    letter-spacing: 1px; /* Adds slight spacing between letters */
-    font-weight: bold; /* Makes the heading bold */
-    cursor: pointer; /* Changes cursor to pointer when hovering over the heading */
+    font-size: 24px;
+    /* Sets font size for the heading */
+    margin-bottom: 20px;
+    /* Adds space below the heading */
+    color: #e0e0e0;
+    /* Light color for the heading text */
+    text-transform: uppercase;
+    /* Converts text to uppercase */
+    letter-spacing: 1px;
+    /* Adds slight spacing between letters */
+    font-weight: bold;
+    /* Makes the heading bold */
+    cursor: pointer;
+    /* Changes cursor to pointer when hovering over the heading */
 
-    
+
     &:hover {
-        color: #4294a4; /* Changes color when hovering over the heading */
-        cursor: pointer; /* Changes cursor to pointer when hovering over the heading */
-        transition: color 0.3s ease; /* Smooth color transition */
+        color: #4294a4;
+        /* Changes color when hovering over the heading */
+        cursor: pointer;
+        /* Changes cursor to pointer when hovering over the heading */
+        transition: color 0.3s ease;
+        /* Smooth color transition */
     }
 }
 
 /* Sudoku Grid Styles */
 .grid {
-    display: grid; /* Makes it a grid container */
-    grid-template-columns: repeat(9, 1fr); /* Creates 9 equal columns */
-    grid-template-rows: repeat(9, 1fr); /* Creates 9 equal rows */
-    gap: 5px; /* Adds gap between grid cells */
-    margin: 20px 0; /* Adds vertical margin around the grid */
+    display: grid;
+    /* Makes it a grid container */
+    grid-template-columns: repeat(9, 1fr);
+    /* Creates 9 equal columns */
+    grid-template-rows: repeat(9, 1fr);
+    /* Creates 9 equal rows */
+    gap: 5px;
+    /* Adds gap between grid cells */
+    margin: 20px 0;
+    /* Adds vertical margin around the grid */
 }
 
 /* Cell Styles */
 .cell {
-    width: 40px; /* Sets the width of each cell */
-    height: 40px; /* Sets the height of each cell */
-    text-align: center; /* Centers text horizontally */
-    font-size: 18px; /* Sets font size for text */
-    border: 1px solid #333; /* Adds a dark border around each cell */
-    background-color: #2c2c2c; /* Dark background color for cells */
-    color: #e0e0e0; /* Light color for text */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    cursor: pointer; /* Changes cursor to pointer when hovering over the cell */
-    outline: none; /* Removes default outline */
-    text-decoration: none; /* Removes default underline */
+    width: 40px;
+    /* Sets the width of each cell */
+    height: 40px;
+    /* Sets the height of each cell */
+    text-align: center;
+    /* Centers text horizontally */
+    font-size: 18px;
+    /* Sets font size for text */
+    border: 1px solid #333;
+    /* Adds a dark border around each cell */
+    background-color: #2c2c2c;
+    /* Dark background color for cells */
+    color: #e0e0e0;
+    /* Light color for text */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+    cursor: pointer;
+    /* Changes cursor to pointer when hovering over the cell */
+    outline: none;
+    /* Removes default outline */
+    text-decoration: none;
+    /* Removes default underline */
     border-radius: 15%;
 }
 
 .cell:hover {
-    background-color: #4a4a4a; /* Lighter background when hovering */
+    background-color: #4a4a4a;
+    /* Lighter background when hovering */
 }
 
 
 /* Read-only cell styling */
 .cell.readonly {
-    background-color: #4a4a4a; /* Lighter background for read-only cells */
-    font-weight: bold; /* Makes the text bold */
-    color: #e0e0e0; /* Light color for text */
-    cursor: not-allowed; /* Changes cursor to not-allowed for read-only cells */
+    background-color: #4a4a4a;
+    /* Lighter background for read-only cells */
+    font-weight: bold;
+    /* Makes the text bold */
+    color: #e0e0e0;
+    /* Light color for text */
+    cursor: not-allowed;
+    /* Changes cursor to not-allowed for read-only cells */
+}
+
+.cell.error {
+    background-color: #ff0000;
+    /* Red background for invalid cells */
 }
 
 /* Button Styles */
 .buttons {
-    display: flex; /* Uses flexbox layout */
-    flex-wrap: wrap; /* Allows buttons to wrap to the next line */
-    justify-content: center; /* Centers the buttons horizontally */
-    gap: 10px; /* Adds space between buttons */
-    margin-top: 20px; /* Adds margin above buttons */
-    justify-content: space-between; /* Spaces the buttons evenly */
-    flex-wrap: wrap; /* Wraps buttons if there are too many */
-    flex-direction: column; /* Vertically aligns the buttons */
+    display: flex;
+    /* Uses flexbox layout */
+    flex-wrap: wrap;
+    /* Allows buttons to wrap to the next line */
+    justify-content: center;
+    /* Centers the buttons horizontally */
+    gap: 10px;
+    /* Adds space between buttons */
+    margin-top: 20px;
+    /* Adds margin above buttons */
+    justify-content: space-between;
+    /* Spaces the buttons evenly */
+    flex-wrap: wrap;
+    /* Wraps buttons if there are too many */
+    flex-direction: column;
+    /* Vertically aligns the buttons */
 }
 
 button {
-    padding: 10px 20px; /* Adds padding inside the button */
-    font-size: 16px; /* Sets font size for the button */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    border: none; /* Removes default border */
-    border-radius: 5px; /* Rounds the button corners */
-    background-color: #007bff; /* Blue background for buttons */
-    color: white; /* White color for text */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    width: 100%; /* Makes the button take full width */
-    
+    padding: 10px 20px;
+    /* Adds padding inside the button */
+    font-size: 16px;
+    /* Sets font size for the button */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    border: none;
+    /* Removes default border */
+    border-radius: 5px;
+    /* Rounds the button corners */
+    background-color: #007bff;
+    /* Blue background for buttons */
+    color: white;
+    /* White color for text */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+    width: 100%;
+    /* Makes the button take full width */
+
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue when hovering */
-    cursor: pointer; /* Changes cursor to pointer when hovering */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    width: 100%; /* Makes the button take full width */
+    background-color: #0056b3;
+    /* Darker blue when hovering */
+    cursor: pointer;
+    /* Changes cursor to pointer when hovering */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+    width: 100%;
+    /* Makes the button take full width */
 
 }
 
 button:active {
-    background-color: #388e3c; /* Green color when button is clicked */
-    cursor: pointer; /* Changes cursor to pointer when button is clicked */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    width: 100%; /* Makes the button take full width */
+    background-color: #388e3c;
+    /* Green color when button is clicked */
+    cursor: pointer;
+    /* Changes cursor to pointer when button is clicked */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+    width: 100%;
+    /* Makes the button take full width */
 }
 
 button:disabled {
-    background-color: #555; /* Greyed out background for disabled button */
-    cursor: not-allowed; /* Changes cursor to not-allowed for disabled button */
+    background-color: #555;
+    /* Greyed out background for disabled button */
+    cursor: not-allowed;
+    /* Changes cursor to not-allowed for disabled button */
 }
 
 /* Difficulty Button Styles */
 button:nth-child(1) {
-    background-color: #28a745; /* Green for easy */
+    background-color: #28a745;
+    /* Green for easy */
 }
 
 button:nth-child(2) {
-    background-color: #ffc107; /* Yellow for medium */
+    background-color: #ffc107;
+    /* Yellow for medium */
 }
 
 button:nth-child(3) {
-    background-color: #dc3545; /* Red for hard */
+    background-color: #dc3545;
+    /* Red for hard */
 }
 
 button:nth-child(4) {
-    background-color: #6c757d; /* Grey for random */
+    background-color: #6c757d;
+    /* Grey for random */
 }
 
 /* Button Hover Styles */
 button:nth-child(1):hover {
-    background-color: #218838; /* Darker green for easy button on hover */
+    background-color: #218838;
+    /* Darker green for easy button on hover */
 }
 
 button:nth-child(2):hover {
-    background-color: #e0a800; /* Darker yellow for medium on hover */
+    background-color: #e0a800;
+    /* Darker yellow for medium on hover */
 }
 
 button:nth-child(3):hover {
-    background-color: #c82333; /* Darker red for hard on hover */
+    background-color: #c82333;
+    /* Darker red for hard on hover */
 }
 
 button:nth-child(4):hover {
-    background-color: #5a6268; /* Darker grey for random on hover */
+    background-color: #5a6268;
+    /* Darker grey for random on hover */
 }
 
 /* Selected Button Style */
 button.selected {
-    background-color: #0056b3 !important; /* Blue for selected button */
+    background-color: #0056b3 !important;
+    /* Blue for selected button */
 
-    color: white !important; /* White text for selected button */
+    color: white !important;
+    /* White text for selected button */
 
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-    width: 100%; /* Makes the button take full width */
+    transition: background-color 0.3s ease;
+    /* Smooth background color transition */
+    width: 100%;
+    /* Makes the button take full width */
 
 }
 
 /* Header Styles */
 h1 {
-    color: #e0e0e0; /* Light color for heading text */
-    font-size: 24px; /* Large heading font size */
-    margin-bottom: 20px; /* Adds margin below heading */
-    text-align: center; /* Centers heading text */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to heading text */
-    transition: text-shadow 0.3s ease; /* Smooth text shadow transition */
-    text-decoration: none; /* Removes default underline */
+    color: #e0e0e0;
+    /* Light color for heading text */
+    font-size: 24px;
+    /* Large heading font size */
+    margin-bottom: 20px;
+    /* Adds margin below heading */
+    text-align: center;
+    /* Centers heading text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Adds shadow to heading text */
+    transition: text-shadow 0.3s ease;
+    /* Smooth text shadow transition */
+    text-decoration: none;
+
+    /* Removes default underline */
     #sudo {
         width: 30px;
         height: 30px;
@@ -250,104 +384,139 @@ h1 {
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .container {
-        padding: 15px; /* Adjusted padding for smaller screens */
+        padding: 15px;
+        /* Adjusted padding for smaller screens */
     }
 
     h1 {
-        font-size: 22px; /* Smaller heading font size */
+        font-size: 22px;
+        /* Smaller heading font size */
     }
 
     .grid {
-        grid-template-columns: repeat(9, 35px); /* Smaller grid cell width */
-        grid-template-rows: repeat(9, 35px); /* Smaller grid cell height */
+        grid-template-columns: repeat(9, 35px);
+        /* Smaller grid cell width */
+        grid-template-rows: repeat(9, 35px);
+        /* Smaller grid cell height */
     }
 
     .cell {
-        width: 35px; /* Smaller cell width */
-        height: 35px; /* Smaller cell height */
-        font-size: 16px; /* Smaller font size for text */
+        width: 35px;
+        /* Smaller cell width */
+        height: 35px;
+        /* Smaller cell height */
+        font-size: 16px;
+        /* Smaller font size for text */
     }
 
     button {
-        padding: 8px 16px; /* Smaller button padding */
-        font-size: 14px; /* Smaller font size for buttons */
-        width: 100%; /* Full width for buttons */
+        padding: 8px 16px;
+        /* Smaller button padding */
+        font-size: 14px;
+        /* Smaller font size for buttons */
+        width: 100%;
+        /* Full width for buttons */
     }
 
     button:nth-child(1),
     button:nth-child(2),
     button:nth-child(3),
     button:nth-child(4) {
-        width: 45%; /* Reduced width for difficulty buttons */
+        width: 45%;
+        /* Reduced width for difficulty buttons */
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 10px; /* Further reduced padding */
-        max-width: 350px; /* Smaller container */
+        padding: 10px;
+        /* Further reduced padding */
+        max-width: 350px;
+        /* Smaller container */
     }
 
     h1 {
-        font-size: 18px; /* Even smaller heading */
+        font-size: 18px;
+        /* Even smaller heading */
     }
 
     .grid {
-        margin-left: 10px; /* Adds left margin to grid */
-        grid-template-columns: repeat(9, 30px); /* Smaller grid cell width */
-        grid-template-rows: repeat(9, 30px); /* Smaller grid cell height */
+        margin-left: 10px;
+        /* Adds left margin to grid */
+        grid-template-columns: repeat(9, 30px);
+        /* Smaller grid cell width */
+        grid-template-rows: repeat(9, 30px);
+        /* Smaller grid cell height */
     }
 
     .cell {
-        width: 30px; /* Smaller cell width */
-        height: 30px; /* Smaller cell height */
-        font-size: 14px; /* Smaller font size */
+        width: 30px;
+        /* Smaller cell width */
+        height: 30px;
+        /* Smaller cell height */
+        font-size: 14px;
+        /* Smaller font size */
     }
 
     button {
-        padding: 8px 12px; /* Even smaller button padding */
-        font-size: 14px; /* Smaller font size for buttons */
+        padding: 8px 12px;
+        /* Even smaller button padding */
+        font-size: 14px;
+        /* Smaller font size for buttons */
     }
 
     button:nth-child(1),
     button:nth-child(2),
     button:nth-child(3),
     button:nth-child(4) {
-        width: 100%; /* Full width for difficulty buttons */
+        width: 100%;
+        /* Full width for difficulty buttons */
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        width: 90%; /* 90% width for smaller screens */
-        max-width: 350px; /* Maximum container width */
-        padding: 10px; /* Consistent padding */
+        width: 90%;
+        /* 90% width for smaller screens */
+        max-width: 350px;
+        /* Maximum container width */
+        padding: 10px;
+        /* Consistent padding */
     }
 
     h1 {
-        font-size: 16px; /* Even smaller heading font size */
+        font-size: 16px;
+        /* Even smaller heading font size */
     }
 
     .grid {
-        grid-template-columns: repeat(9, 30px); /* Smaller grid cells */
-        grid-template-rows: repeat(9, 30px); /* Smaller grid cells */
+        grid-template-columns: repeat(9, 30px);
+        /* Smaller grid cells */
+        grid-template-rows: repeat(9, 30px);
+        /* Smaller grid cells */
     }
 
     .cell {
-        width: 30px; /* Smaller cell width */
-        height: 30px; /* Smaller cell height */
-        font-size: 14px; /* Smaller font size */
+        width: 30px;
+        /* Smaller cell width */
+        height: 30px;
+        /* Smaller cell height */
+        font-size: 14px;
+        /* Smaller font size */
     }
 
     button {
-        padding: 8px 12px; /* Reduced padding for buttons */
-        font-size: 14px; /* Reduced font size for buttons */
+        padding: 8px 12px;
+        /* Reduced padding for buttons */
+        font-size: 14px;
+        /* Reduced font size for buttons */
     }
 
     button:nth-child(1),
     button:nth-child(2),
     button:nth-child(3),
     button:nth-child(4) {
-        width: 100%; /* Full width for difficulty buttons */
+        width: 100%;
+        /* Full width for difficulty buttons */
     }
 }
