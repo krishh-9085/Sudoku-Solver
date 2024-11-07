@@ -15,6 +15,54 @@ body {
     color: #e0e0e0; /* Light color for text */
 }
 
+/* Loading Icon Styles */
+/* Centering grid and loading icon */
+
+
+.loading-icon {
+    display: none; /* Initially hidden, toggle to 'display: flex' when needed */
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Position it in the center of the grid */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the loading icon in the grid */
+    perspective: 1000px;
+    z-index: 1; /* Ensures the loading icon is above other grid elements */
+}
+
+.cube {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCube 1.5s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #007bff;
+    opacity: 0.8;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+}
+
+.front { transform: translateZ(25px); }
+.back { transform: rotateY(180deg) translateZ(25px); }
+.left { transform: rotateY(-90deg) translateZ(25px); }
+.right { transform: rotateY(90deg) translateZ(25px); }
+.top { transform: rotateX(90deg) translateZ(25px); }
+.bottom { transform: rotateX(-90deg) translateZ(25px); }
+
+@keyframes rotateCube {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+
+
 /* Container Styles */
 .container {
     text-align: center; /* Centers text inside container */
