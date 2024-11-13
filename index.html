@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="icons/sudoku.svg" id="sudo" alt="Sudoku Icon"/>
+            Sudoku Solver
+        </h1>
+        <div class="grid" id="sudokuGrid"></div>
+        <div class="loading-icon" id="loadingIcon">
+            <!-- Updated loading animation -->
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="difficulty easy" onclick="getPuzzle('easy')">Easy</button>
+            <button class="difficulty medium" onclick="getPuzzle('medium')">Medium</button>
+            <button class="difficulty hard" onclick="getPuzzle('hard')">Hard</button>
+            <button class="difficulty random" onclick="getPuzzle('random')">Random</button>
+            <button class="action" onclick="resetGrid()">Reset</button>
+            <button class="action" onclick="solvePuzzle()" id="solveButton">Solve Puzzle</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
