@@ -10,31 +10,12 @@ Welcome to **Sudoku Solver**, a sleek and interactive web application designed t
 
 ---
 
-## 📖 **Table of Contents**
-- [Features](#features)
-- [Demo](#demo)
-- [Technologies Used](#technologies-used)
-- [How to Run](#how-to-use)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## 🚀 **Features**
 - **Interactive Sudoku Grid**: Users can easily fill in values in the 9x9 grid and attempt to solve Sudoku puzzles.
 - **Multiple Difficulty Levels**: Choose from **Easy**, **Medium**, **Hard**, or even a **Random** puzzle generator to challenge your solving skills.
 - **Backtracking Algorithm**: A robust algorithm that efficiently solves puzzles by exploring potential solutions and backtracking when necessary.
 - **User-friendly Interface**: The modern design makes solving puzzles a smooth and enjoyable experience.
 - **Real-time Puzzle Validation**: The app checks your input as you fill the grid, providing instant feedback on validity.
-
----
-
-## 🎥 **Demo**
-
-![Sudoku Solver Demo](https://github.com/user-attachments/assets/ac85d96d-6407-43ab-a1a2-a278a6b89da6)
-
-Experience the magic of the Sudoku Solver in action! This demo showcases how quickly and easily you can fill the grid and find the solution using the app's backtracking algorithm.
 
 ---
 
